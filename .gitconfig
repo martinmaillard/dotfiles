@@ -1,0 +1,19 @@
+[user]
+	name = Martin Maillard
+	email = martin@maillard 
+[github]
+	user = morphyn
+[core]
+	autocrlf = true
+	safecrlf = true
+[color]
+	ui = auto
+[alias]
+  aa = add --all
+  amend = commit --amend
+  br = branch
+  ci = commit
+  co = checkout
+  hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(blue)%an, %cr%Creset' --abbrev-commit --date=short --branches
+  pom = push origin master
+  st = status
