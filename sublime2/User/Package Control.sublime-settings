@@ -1,0 +1,17 @@
+{
+	"auto_upgrade_last_run": 1338932635,
+	"installed_packages":
+	[
+		"Camaleon",
+		"Color Highlighter",
+		"ColorPicker",
+		"Default File Type",
+		"Gist",
+		"Git",
+		"Package Control",
+		"SFTP",
+		"SublimeBlockCursor",
+		"SublimeLinter",
+		"SublimeRope"
+	]
+}
