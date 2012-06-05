@@ -1,0 +1,57 @@
+# specific folders and files #
+##############################
+cache/*
+temp/*
+
+vendor/*
+composer.phar
+
+venv/*
+database/*
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Databases #
+#############
+*.sql
+*.sqlite
+
+# MISC #
+########
+*~
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*.cache
+*.sass-cache
+*.project
+*.sublime-project
+*.sublime-workspace
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
