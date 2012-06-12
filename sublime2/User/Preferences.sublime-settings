@@ -1,4 +1,6 @@
 {
+	"font_size": 11,
+	"rulers": [80],
 	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
 	"ignored_packages": [],
 	"detect_slow_plugins": false
