@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1338932635,
+	"auto_upgrade_last_run": 1340915382,
 	"installed_packages":
 	[
 		"Camaleon",
@@ -12,6 +12,7 @@
 		"SFTP",
 		"SublimeBlockCursor",
 		"SublimeLinter",
-		"SublimeRope"
+		"SublimeRope",
+		"Theme - Soda"
 	]
 }
