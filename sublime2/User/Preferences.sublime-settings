@@ -1,19 +1,21 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
 	"detect_slow_plugins": false,
 	"draw_white_space": "all",
-	"font_size": 11.0,
+	"font_face": "Ubuntu Mono",
+	"font_size": 12.0,
 	"ignored_packages":
 	[
 	],
 	"rulers":
 	[
-		72, 79
+		72,
+		79
 	],
-	"theme": "Soda Dark.sublime-theme",
 	"soda_classic_tabs": true,
+	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-  	"useTabStops": true,
 	"trim_trailing_white_space_on_save": true,
+	"useTabStops": true,
 	"vintage_start_in_command_mode": true
 }
