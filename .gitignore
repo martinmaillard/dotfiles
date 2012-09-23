@@ -1,13 +1,13 @@
 # specific folders and files #
 ##############################
-cache/*
-temp/*
+cache/
+temp/
 
-vendor/*
+vendor/
 composer.phar
 
-venv/*
-database/*
+venv/
+database/
 
 # Compiled source #
 ###################
@@ -51,6 +51,7 @@ database/*
 *.project
 *.sublime-project
 *.sublime-workspace
+.ropeproject/
 .DS_Store*
 ehthumbs.db
 Icon?
