@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1349031567,
+	"auto_upgrade_last_run": 1349035493,
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"Color Highlighter",
 		"ColorPicker",
 		"Default File Type",
