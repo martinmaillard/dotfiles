@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1345446434,
+	"auto_upgrade_last_run": 1349031567,
 	"installed_packages":
 	[
 		"Color Highlighter",
@@ -12,6 +12,7 @@
 		"SublimeBlockCursor",
 		"SublimeLinter",
 		"SublimeRope",
-		"Theme - Soda"
+		"Theme - Soda",
+		"ZenCoding"
 	]
 }
