@@ -6,6 +6,14 @@
             { "key": "setting.is_widget", "operand": false }
         ]
     },
+    { "keys": ["enter"], "command": "insert",
+        "args": {"characters": "\n"},
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
     { "keys": ["f12"], "command": "reindent" },
     { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
     { "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
