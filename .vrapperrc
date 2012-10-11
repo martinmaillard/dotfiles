@@ -1,1 +1,1 @@
-imap jj <ESC>
+imap kj <ESC>
