@@ -15,9 +15,10 @@
   br = branch
   ci = commit
   co = checkout
-  dc = diff -cached
+  dc = diff --cached
   di = diff
   h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(blue)%an, %cr%Creset' --abbrev-commit --date=short --branches
   pom = push origin master
   st = status
+  s = status
   todo = grep --heading --line-number --break --ignore-case -e ' FIX ' -e ' TODO '
