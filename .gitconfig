@@ -16,7 +16,8 @@
   co = checkout
   dc = diff --cached
   di = diff
-  h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(blue)%an, %cr%Creset' --abbrev-commit --date=short --branches
+  h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(blue)%an, %cr%Creset' --date=short --branches
+  hh = "!f() { git h | head -$1;}; f"
   pom = push origin master
   st = status
   s = status
