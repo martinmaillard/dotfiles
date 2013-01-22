@@ -1,19 +1,24 @@
 {
-	"auto_upgrade_last_run": 1349035493,
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"Auto Semi-Colon",
 		"Color Highlighter",
 		"ColorPicker",
+		"Dayle Rees Color Schemes",
 		"Default File Type",
+		"Emmet",
+		"FileDiffs",
 		"Gist",
-		"Git",
+		"JSLint",
+		"Origami",
 		"Package Control",
 		"SFTP",
-		"SublimeBlockCursor",
 		"SublimeLinter",
+		"SublimeREPL",
 		"SublimeRope",
 		"Theme - Soda",
-		"ZenCoding"
+		"Tomorrow Color Schemes"
 	]
 }
