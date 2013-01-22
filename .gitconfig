@@ -3,7 +3,6 @@
   email = martin@maillard
 [github]
   user = morphyn
-  token =
 [core]
   autocrlf = true
   safecrlf = true
@@ -21,4 +20,4 @@
   pom = push origin master
   st = status
   s = status
-  todo = grep --heading --line-number --break --ignore-case -e ' FIX ' -e ' TODO '
+  todo = grep --heading --line-number --break --ignore-case -e ' FIX ' -e ' TODO ' -e ' TODO: '
