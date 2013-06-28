@@ -1,17 +1,17 @@
 [user]
   name = Martin Maillard
-  email = martin@maillard
+  email = self@martin-maillard.com
+
 [github]
-  user = morphyn
-[core]
-  autocrlf = true
-  safecrlf = true
+  user = martinmaillard
+
 [color]
   ui = auto
+
 [alias]
   aa = add --all
   amend = commit --amend
-  br = branch
+  b = branch
   ci = commit
   co = checkout
   dc = diff --cached
@@ -19,6 +19,5 @@
   h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(blue)%an, %cr%Creset' --date=short --branches
   hh = "!f() { git h | head -$1;}; f"
   pom = push origin master
-  st = status
   s = status
   todo = grep --heading --line-number --break --ignore-case -e ' FIX ' -e ' TODO ' -e ' TODO: '
