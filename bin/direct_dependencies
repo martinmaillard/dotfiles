@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# This script uses pip to display all the installed packages of the
+# currently activated python (virtual)env that are not dependencies of
+# other installed packages. It will supposedly make it easier to clean
+# up a virtualenv without breaking stuff.
+#
+# Next step is to identify which of these packages are not used at all,
+# but I'm not sure this can be done reliably.
+#
+# Author:   Martin Maillard (self@martin-maillard.com)
+#           July 2013
+#
+
+to_lower() {
+    awk '{print tolower($0)}'
+}
+
+# All the packages installed in this python env
+installed_packages() {
+    pip list | sed -r "s/ \(.*\)//" | to_lower | sort
+}
+
+# Dependencies of installed packages
+2nd_degree_dependencies() {
+    for p in $(installed_packages); do
+        pip show $p |
+        grep -E "^Requires: .+" |
+        sed "s/Requires: //" |
+        sed "s/, /\\n/g"
+    done | to_lower | sort
+}
+
+# Potential direct dependencies of this project
+direct_dependencies() {
+    comm -23 <(installed_packages) <(2nd_degree_dependencies)
+}
+
+direct_dependencies
