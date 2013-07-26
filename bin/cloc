@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# use: cloc directory file-extension
+
+E_BADARGS=65
+
+if [ $# -ne 2 ]
+then
+  echo "Usage: `basename $0` {directory} {file-extension}"
+  exit $E_BADARGS
+fi
+
+cat $(find $1 -name "*.$2") stopstopstop 2>>/dev/null | grep . | wc -l
