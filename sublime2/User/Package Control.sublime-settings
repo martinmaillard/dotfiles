@@ -8,17 +8,23 @@
 		"ColorPicker",
 		"Dayle Rees Color Schemes",
 		"Default File Type",
+		"DocBlockr",
 		"Emmet",
 		"FileDiffs",
 		"Gist",
-		"JSLint",
+		"Git",
+		"GitGutter",
+		"Handlebars",
 		"Origami",
 		"Package Control",
+		"SchemeCycler",
 		"SFTP",
 		"SublimeLinter",
 		"SublimeREPL",
 		"SublimeRope",
+		"SuperCollider",
 		"Theme - Soda",
-		"Tomorrow Color Schemes"
+		"Tomorrow Color Schemes",
+		"VintageEx"
 	]
 }
