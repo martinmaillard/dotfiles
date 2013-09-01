@@ -1,5 +1,6 @@
 
 imap kj <esc>
+let mapleader=","
 
 " Navigate splits
 nnoremap <c-j> <c-w>j
@@ -11,6 +12,7 @@ nnoremap <c-l> <c-w>l
 map j gj
 map k gk
 
+set number
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -23,10 +25,13 @@ set showmatch
 " Keep space after cursor when scrolling
 set so=7
 set ruler
-set cmdheight=2
+set cmdheight=1
 " Case-sensitive search only if it contains upper-case characters
 set ignorecase smartcase
+set incsearch
 set hlsearch
+nnoremap <cr> :nohlsearch<cr>
+
 " highlight current line
 set cursorline
 set showtabline=2
@@ -38,10 +43,6 @@ set encoding=utf8
 " Auto read when a file is modified from the outside
 set autoread
 
-" No sounds on errors
-set noerrorbells
-set novisualbell
-set t_vb=
 set tm=500
 
 set wildmenu
