@@ -13,6 +13,8 @@ nnoremap <c-l> <c-w>l
 " sudo write
 cmap W! w !sudo tee % >/dev/null
 
+colorscheme Tomorrow-Night
+
 " Treat long lines as break lines
 map j gj
 map k gk
