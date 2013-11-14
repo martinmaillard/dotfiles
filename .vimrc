@@ -1,7 +1,7 @@
 
 execute pathogen#infect()
 
-imap kj <esc>
+inoremap kj <esc>
 let mapleader=","
 
 " Navigate splits
