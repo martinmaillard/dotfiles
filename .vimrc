@@ -10,6 +10,10 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" Create splits
+nnoremap <leader>v <c-w>v<c-w>l
+nnoremap <leader>h <c-w>s<c-w>j
+
 " sudo write
 cmap W! w !sudo tee % >/dev/null
 
