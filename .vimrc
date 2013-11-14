@@ -4,6 +4,11 @@ execute pathogen#infect()
 inoremap kj <esc>
 let mapleader=","
 
+" Save
+nnoremap <leader>s :update<cr>
+inoremap <leader>s <esc>:update<cr>
+vnoremap <leader>s <esc>:update<cr>
+
 " Navigate splits
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
