@@ -10,6 +10,9 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" sudo write
+cmap W! w !sudo tee % >/dev/null
+
 " Treat long lines as break lines
 map j gj
 map k gk
