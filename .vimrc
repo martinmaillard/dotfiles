@@ -1,4 +1,6 @@
 
+execute pathogen#infect()
+
 imap kj <esc>
 let mapleader=","
 
