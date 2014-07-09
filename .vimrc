@@ -62,3 +62,7 @@ set autoread
 set tm=500
 
 set wildmenu
+
+" Remove trailing spaces
+nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
+
