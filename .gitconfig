@@ -14,6 +14,7 @@
 
 [alias]
   aa = add --all
+  ap = add -p
   amend = commit --amend
   b = branch
   ci = commit
