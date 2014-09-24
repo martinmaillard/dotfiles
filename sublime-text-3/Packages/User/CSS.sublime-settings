@@ -1,0 +1,8 @@
+{
+	"extensions":
+	[
+		"less"
+	],
+	"tab_size": 2,
+	"rulers": [80]
+}

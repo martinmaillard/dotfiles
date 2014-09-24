@@ -1,0 +1,32 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Anaconda",
+		"Auto Semi-Colon",
+		"Color Highlighter",
+		"ColorPicker",
+		"ColorSchemeSelector",
+		"Dayle Rees Color Schemes",
+		"Djaneiro",
+		"DocBlockr",
+		"Emmet",
+		"FileDiffs",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"lispindent",
+		"Origami",
+		"Package Control",
+		"paredit",
+		"requirementstxt",
+		"SchemeCycler",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimePythonIDE",
+		"SublimeRope",
+		"Theme - Soda",
+		"Tomorrow Color Schemes",
+		"Vintageous"
+	]
+}

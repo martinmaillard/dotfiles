@@ -1,0 +1,41 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/Color Highlighter/themes/Mellow (SL).tmTheme",
+	"detect_slow_plugins": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Ubuntu Mono",
+	"font_size": 10,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"linters":
+	{
+		"jshint":
+		{
+			"@disable": false,
+			"args":
+			[
+			],
+			"excludes":
+			[
+			]
+		}
+	},
+	"rulers":
+	[
+		72,
+		79
+	],
+	"scroll_past_end": true,
+	"soda_classic_tabs": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"useTabStops": true,
+	"vintage_start_in_command_mode": true,
+	"wide_caret": true
+}

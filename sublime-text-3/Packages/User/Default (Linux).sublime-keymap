@@ -1,0 +1,148 @@
+[
+    { "keys": ["k", "j"], "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+    { "keys": ["k", "j"],
+      "command": "_enter_normal_mode",
+      "args": {"mode": "mode_insert"},
+      "context": [ { "key": "vi_insert_mode_aware"} ]
+    },
+
+    { "keys": ["enter"], "command": "insert",
+        "args": {"characters": "\n"},
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+
+    { "keys": ["ctrl+shift+r"], "command": "show_panel", "args": {"panel": "replace"} },
+
+    { "keys": ["f12"], "command": "reindent" },
+    { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+    {
+        "keys": ["alt+shift+left"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.33, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["alt+shift+right"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.66, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["alt+shift+6"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells":
+            [
+                [0, 0, 1, 2], [1, 0, 2, 1],
+                              [1, 1, 2, 2]
+            ]
+        }
+    },
+    { "keys": ["ctrl+r", "ctrl+d"], "command": "goto_python_definition", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+h"], "command": "python_get_documentation", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+r"], "command": "python_refactor_rename", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+e"], "command": "python_refactor_extract_method", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+v"], "command": "python_refactor_extract_variable", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+n"], "command": "python_refactor_inline_variable", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+j"], "command": "python_jump_to_global", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+i"], "command": "python_auto_import", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    { "keys": ["ctrl+r", "ctrl+c"], "command": "python_regenerate_cache", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+    {
+        "keys": ["ctrl+r", "ctrl+f"], "command": "python_refactor_restructure", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+    {
+        "keys": ["ctrl+r", "ctrl+m"], "command": "python_generate_modules_cache", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+
+    { "keys": ["ctrl+k"], "command": "travel_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+h"], "command": "travel_to_pane", "args": {"direction": "left"} },
+
+    { "keys": ["ctrl+shift+k"], "command": "carry_file_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+shift+l"], "command": "carry_file_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+shift+j"], "command": "carry_file_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+shift+h"], "command": "carry_file_to_pane", "args": {"direction": "left"}   },
+
+    { "keys": ["ctrl+k", "alt+k"], "command": "clone_file_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+k", "alt+l"], "command": "clone_file_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+k", "alt+j"], "command": "clone_file_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+k", "alt+h"], "command": "clone_file_to_pane", "args": {"direction": "left"} },
+
+    { "keys": ["alt+shift+k"], "command": "create_pane", "args": {"direction": "up"} },
+    { "keys": ["alt+shift+l"], "command": "create_pane", "args": {"direction": "right"} },
+    { "keys": ["alt+shift+j"], "command": "create_pane", "args": {"direction": "down"} },
+    { "keys": ["alt+shift+h"], "command": "create_pane", "args": {"direction": "left"} },
+
+    { "keys": ["ctrl+alt+shift+k"], "command": "destroy_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+alt+shift+l"], "command": "destroy_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+alt+shift+j"], "command": "destroy_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+alt+shift+h"], "command": "destroy_pane", "args": {"direction": "left"} },
+
+    { "keys": ["f8"], "command": "select_color_scheme", "args": { "random": true } },
+    { "keys": ["shift+f8"], "command": "select_color_scheme", "args": { "direction": "next" } }
+]
