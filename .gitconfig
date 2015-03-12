@@ -12,6 +12,21 @@
 [color]
   ui = auto
 
+[color "branch"]
+  current = green
+  local = yellow
+  remote = magenta
+
+[color "diff"]
+  meta = cyan
+  frag = magenta
+
+[color "status"]
+  untracked = cyan
+
+[http]
+  sslVerify = false
+
 [alias]
   aa = add --all
   ap = add -p
@@ -19,9 +34,10 @@
   b = branch
   ci = commit
   co = checkout
+  cp = cherry-pick
   dc = diff --cached
   di = diff
-  h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(blue)%an, %cr%Creset' --date=short --branches
+  h = log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(blue)%an, %cr%C(reset)' --date=short --branches
   hh = "!f() { git h | head -$1;}; f"
   pom = push origin master
   s = status
