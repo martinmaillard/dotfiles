@@ -1,12 +1,15 @@
 
 alias zshconf="vim $HOME/.zshrc"
-alias s=subl
-alias sd="subl . &"
 alias ll="ls -la"
 alias acve=activate_virtualenv
 alias g=git
-alias pnr="python nomad.py runserver"
-alias pni="python nomad.py introspect"
-alias pnc="python nomad.py clean"
+alias gh="git h"
+alias gs="git s"
+alias m="python manage.py $1"
+alias pmr="python manage.py runserver"
 alias serve="python -m SimpleHTTPServer $1"
 alias cd..="cd .."
+alias pir="pip install -r requirements.txt $1"
+alias pird="pip install -r requirements-dev.txt $1"
+alias dockerclean="docker images | awk '{ if (\$1 == \"<none>\") { print \$3 }}' | xargs docker rmi"
+alias vim=nvim
