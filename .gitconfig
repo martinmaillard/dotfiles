@@ -9,6 +9,12 @@
   editor = vim
   pager = more
 
+[diff]
+  compactionHeuristic = true
+
+[stash]
+  showPatch = true
+
 [color]
   ui = auto
 
@@ -23,9 +29,6 @@
 
 [color "status"]
   untracked = cyan
-
-[http]
-  sslVerify = false
 
 [alias]
   aa = add --all
@@ -42,3 +45,15 @@
   pom = push origin master
   s = status
   todo = grep --heading --line-number --break --ignore-case -e ' FIX ' -e ' TODO ' -e ' TODO: '
+  please = push --force-with-lease
+
+  unstage = reset -q HEAD --
+  discard = checkout --
+  uncommit = reset --mixed HEAD~
+
+  branches = branch -a
+  tags = tag
+  stashes = stash list
+
+[credential]
+  helper = cache --timeout=1234600
