@@ -66,3 +66,6 @@ set wildmenu
 " Remove trailing spaces
 nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 
+" Copy yanked selection to macos clipboard
+nnoremap <leader>cc :call system('pbcopy', @0)<cr>
+
