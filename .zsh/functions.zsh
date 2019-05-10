@@ -8,3 +8,8 @@ activate_virtualenv() {
     else echo "No nearby virtualenv spotted.";
     fi
 }
+
+dockerclean() {
+    docker container rm $(docker container ls --filter 'status=exited' -aq)
+    docker rmi $(docker image ls -aq)
+}
