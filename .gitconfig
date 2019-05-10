@@ -15,6 +15,9 @@
 [stash]
   showPatch = true
 
+[push]
+  default = current
+
 [color]
   ui = auto
 
@@ -44,7 +47,7 @@
   hh = "!f() { git h | head -$1;}; f"
   pom = push origin master
   s = status
-  todo = grep --heading --line-number --break --ignore-case -e ' FIX ' -e ' TODO ' -e ' TODO: '
+  todo = grep --heading --line-number --break --ignore-case -e ' FIX ' -e ' TODO ' -e ' TODO:'
   please = push --force-with-lease
 
   unstage = reset -q HEAD --
