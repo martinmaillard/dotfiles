@@ -13,3 +13,8 @@ dockerclean() {
     docker container rm $(docker container ls --filter 'status=exited' -aq)
     docker rmi $(docker image ls -aq)
 }
+
+cleanpr() {
+    git push origin :$1
+    git branch -d $1
+}
