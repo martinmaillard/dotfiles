@@ -7,7 +7,12 @@
 
 [core]
   editor = vim
-  pager = more
+  pager = less
+  excludesfile = ~/.gitignore
+
+[pager]
+  diff = diff-so-fancy | less --tabs=4 -RFX
+  show = diff-so-fancy | less --tabs=4 -RFX
 
 [diff]
   compactionHeuristic = true
@@ -53,6 +58,8 @@
   unstage = reset -q HEAD --
   discard = checkout --
   uncommit = reset --mixed HEAD~
+  shove = commit --amend --no-edit
+  pupr = pull --prune
 
   branches = branch -a
   tags = tag

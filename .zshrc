@@ -9,6 +9,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="lambda"
+#fpath=("$HOME/.zsh/themes/pure" $fpath)
+#autoload -U promptinit; promptinit
+#prompt pure
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,9 +55,17 @@ ZSH_CUSTOM=$HOME/.zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker colored-man-pages yarn)
+# plugins=(git docker colored-man-pages)
+plugins=(docker colored-man-pages)
+
+# Setup Homebrew completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
 
 source $ZSH/oh-my-zsh.sh
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
@@ -70,19 +81,26 @@ export LANG=en_US.UTF-8
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Starship prompt
+eval "$(starship init zsh)"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export ANDROID_HOME=~/Library/Android/sdk
-export PYTHONSTARTUP=~/.python-startup.py
+# export PYTHONSTARTUP=~/.python-startup.py
 
-PATH="${PATH}:/Applications/LibreOffice.app/Contents/MacOS:/Library/TeX/texbin/"
-PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${HOME}/.gem/ruby/2.0.0/bin"
-PATH="${HOME}/perl5/bin${PATH+:}${PATH}"; export PATH;
-PERL5LIB="${HOME}/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="${HOME}/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"${HOME}/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=${HOME}/perl5"; export PERL_MM_OPT;
+PATH="${HOME}/.local/bin:${PATH}"
+
+export PATH;
+
+LIBRARY_PATH=${LIBRARY_PATH}:/usr/local/opt/openssl/lib/
+
+STARDOG_HOME="${HOME}/.stardog"
+
+# Setup autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# Setup ASDF
+. /usr/local/opt/asdf/asdf.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
