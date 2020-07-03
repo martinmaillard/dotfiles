@@ -1,0 +1,53 @@
+{
+  "telemetry.enableTelemetry": false,
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.tips.enabled": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "breadcrumbs.enabled": true,
+  "emmet.includeLanguages": {
+    "HTML (Eex)": "html"
+  },
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "workbench.colorTheme": "Quiet Light",
+  "[html]": {},
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "search.exclude": {
+    "**/.elixir_ls": true,
+    "**/*.pyc": true,
+    "**/venv": true
+  },
+  "window.zoomLevel": 0,
+  "python.jediEnabled": false,
+  "window.nativeFullScreen": false,
+  "window.newWindowDimensions": "maximized",
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ],
+  "elixirLS.fetchDeps": false,
+  "elixirLS.dialyzerFormat": "dialyxir_long",
+"elixirLS.projectDir": ".",
+"python.languageServer": "Microsoft"
+}
