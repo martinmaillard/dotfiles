@@ -1,22 +1,7 @@
 
-" Vundle setup
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/syntastic'
-Plugin 'editorconfig/editorconfig-vim'
-
-" Vundle setup
-call vundle#end()
 filetype plugin indent on
 
-colorscheme mustang
+"colorscheme mustang
 
 inoremap kj <esc>
 let mapleader=","
@@ -39,20 +24,6 @@ nnoremap <leader>h <c-w>s<c-w>j
 " NERTTree
 nnoremap <leader>n :NERDTreeToggle<cr>
 
-" Syntastic
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 0
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-
-" let g:syntastic_python_checkers=['flake8']
-" let g:syntastic_javascript_checkers=['jscs', 'jshint']
-
-
 " sudo write
 cmap W! w !sudo tee % >/dev/null
 
@@ -63,6 +34,9 @@ map k gk
 " Allow keeping edited buffers open (but hidden)
 set hidden
 
+" Tell vim that my terminal background is dark
+set bg=dark
+
 set number
 set expandtab
 set tabstop=4
@@ -71,7 +45,12 @@ set softtabstop=4
 set autoindent
 set smartindent
 set laststatus=2
+
+" Highlight matching brackets
 set showmatch
+
+" Never beep
+set visualbell
 
 " Keep space after cursor when scrolling
 set so=7
