@@ -82,7 +82,7 @@ export LANG=en_US.UTF-8
 # fi
 
 # Starship prompt
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -90,12 +90,17 @@ eval "$(starship init zsh)"
 # export PYTHONSTARTUP=~/.python-startup.py
 
 PATH="${HOME}/.local/bin:${PATH}"
+PATH="/usr/local/opt/openjdk/bin:${PATH}"
+PATH="/usr/local/sbin:${PATH}"
 
 export PATH;
 
-LIBRARY_PATH=${LIBRARY_PATH}:/usr/local/opt/openssl/lib/
+export LIBRARY_PATH=${LIBRARY_PATH}:/usr/local/opt/openssl/lib/
 
-STARDOG_HOME="${HOME}/.stardog"
+export STARDOG_HOME="${HOME}/.stardog"
+
+# Install Erlang docs
+export KERL_BUILD_DOCS="yes"
 
 # Setup autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

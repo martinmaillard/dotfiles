@@ -1,14 +1,14 @@
 [user]
   name = Martin Maillard
-  email = self@martin-maillard.com
+  email = git@martinmaillard.com
 
 [github]
   user = martinmaillard
 
 [core]
   editor = vim
-  pager = less
   excludesfile = ~/.gitignore
+  attributesfiles = ~/.gitattributes
 
 [pager]
   diff = diff-so-fancy | less --tabs=4 -RFX
@@ -16,6 +16,10 @@
 
 [diff]
   compactionHeuristic = true
+
+[diff-so-fancy]
+  stripLeadingSymbols = false
+  markEmptyLines = false
 
 [stash]
   showPatch = true
@@ -67,3 +71,12 @@
 
 [credential]
   helper = cache --timeout=1234600
+
+[pull]
+  ff = only
+
+[init]
+  defaultBranch = main
+
+[merge]
+   tool = vimdiff
