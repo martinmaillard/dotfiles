@@ -69,6 +69,9 @@
   tags = tag
   stashes = stash list
 
+  v = "!git tag -a v\"$1\" -m \"Version $1\" #"
+
+
 [credential]
   helper = cache --timeout=1234600
 
