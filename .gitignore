@@ -1,5 +1,6 @@
 .python-version
 .tool-versions
+*.code-workspace
 venv/
 .vscode/
 .DS_Store

@@ -83,3 +83,5 @@
 
 [merge]
    tool = vimdiff
+[branch]
+	sort = -committerdate
