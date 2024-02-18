@@ -89,6 +89,9 @@ export LANG=en_US.UTF-8
 
 # export PYTHONSTARTUP=~/.python-startup.py
 
+# Tell Phoenix how to link to file in error page stacktrace
+export PLUG_EDITOR='vscode://file/__FILE__:__LINE__'
+
 PATH="${HOME}/.local/bin:${PATH}"
 PATH="/usr/local/opt/openjdk/bin:${PATH}"
 PATH="/usr/local/sbin:${PATH}"
@@ -99,13 +102,30 @@ export LIBRARY_PATH=${LIBRARY_PATH}:/usr/local/opt/openssl/lib/
 
 export STARDOG_HOME="${HOME}/.stardog"
 
+# Enable history in erl and iex
+export ERL_AFLAGS="-kernel shell_history_enabled"
+
 # Install Erlang docs
 export KERL_BUILD_DOCS="yes"
+# See asdf-erlang docs
+export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
+
+# Enable iex history
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+# Android stuff
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export PATH=/usr/local/opt/postgresql@15/bin:$PATH
 
 # Setup autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# Setup ASDF
-. /usr/local/opt/asdf/asdf.sh
+# Activate mise
+eval "$(mise activate zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
